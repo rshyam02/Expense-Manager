@@ -1,12 +1,23 @@
-# Use OpenJDK base image
-FROM openjdk:17-jdk-slim
+# Stage 1: Build the jar
+FROM eclipse-temurin:17-jdk AS build
+WORKDIR /app
 
-# Add metadata
-LABEL maintainer="you@example.com"
+# Copy pom.xml and download dependencies (for caching)
+COPY pom.xml .
+RUN ./mvnw dependency:go-offline
 
-# Add jar file to container
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
+# Copy source code
+COPY src ./src
 
-# Run the jar file
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+# Build the jar (skip tests for faster build)
+RUN ./mvnw clean package -DskipTests
+
+# Stage 2: Run the jar
+FROM eclipse-temurin:17-jre
+WORKDIR /app
+
+# Copy the jar from the build stage
+COPY --from=build /app/target/*.jar app.jar
+
+# Run the jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
