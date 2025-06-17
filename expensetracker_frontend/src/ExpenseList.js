@@ -21,7 +21,7 @@ const ExpenseList = () => {
 	      })
 	      .catch((error) => {
 	        console.error("Error fetching expenses:", error);
-	        setExpenses([]); // Even on error, set it to an empty array
+	        setExpenses([]); 
 	      });
 	
   };
