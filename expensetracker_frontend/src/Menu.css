@@ -1,0 +1,99 @@
+
+.Menudiv .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color:rgb(31, 29, 30);
+     overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.8s ease-in-out;
+}
+.Menudiv .sidebar.open{
+    left: 0;
+}
+.Menudiv h1{
+    color: whitesmoke;
+}
+ 
+.Menudiv .hamburger_icon{
+    height: 70px;
+    width: 70px;
+    top:0;
+    margin-top: 40px;
+    margin-left: 20px;
+    left: 15px;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background-color: rgb(40,40,40);
+    
+    /*border: 1px solid rgb(19, 146, 172);*/
+    border-radius: 10px;
+   
+}
+.Menudiv .hamimage{
+    left: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:20px;
+    height: 50px;
+    width: 50px;
+}
+ 
+.Menudiv .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+ 
+.Menudiv .sidebar ul li {
+    padding: 10px 15px;
+}
+ 
+.Menudiv .sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 20px;
+}
+ 
+.Menudiv .sidebar ul li a:hover {
+    background-color: rgb(40, 40, 40);
+    width:200px;
+    color: rgb(19, 146, 172);
+    height:30px;
+}
+ 
+ 
+/* .Menudiv .content {
+    margin-left: 100px;
+    padding: 20px;
+} */
+ 
+.Menudiv .content.shifted{
+    margin-left: 250px;
+}
+.website1-title{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin-left: 1000px;
+ 
+   
+}
+.pp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkgreen;
+}
+ 
+.Menudiv body{
+    display: flex;
+    justify-content: center;
+ 
+    align-items: center;
+}
