@@ -119,7 +119,7 @@ export default AddExpense;
 /*import React, { useState } from "react";
 import axios from "axios";
  
-const AddExpense = ({ onExpenseAdded }) => { // Accept a callback to notify when an expense is added
+const AddExpense = ({ onExpenseAdded }) => { 
   const [description, setDescription] = useState("");
   const [amount, setAmount] = useState("");
   const [category, setCategory] = useState("");
