@@ -24,7 +24,7 @@ axios.get("http://localhost:8080/api/expenses")
  
     const addExpense = (expense) => {
 axios.post("http://localhost:8080/api/expenses", expense)
-            .then(response=>setExpenses(response.data))		  // Adding the new expense to the list
+            .then(response=>setExpenses(response.data))		  
   			 
             .catch(error => console.error(error));
             
