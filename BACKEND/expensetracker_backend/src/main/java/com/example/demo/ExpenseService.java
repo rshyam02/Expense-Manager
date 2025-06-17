@@ -35,7 +35,7 @@ public class ExpenseService {
  
     public Expense addExpense(Expense expense) {
         Expense savedExpense = expenseRepository.save(expense);
-        System.out.println("Saved Expense: " + savedExpense); // Log the saved expense
+        System.out.println("Saved Expense: " + savedExpense); 
         return savedExpense;
     }
  
