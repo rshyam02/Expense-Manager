@@ -97,7 +97,8 @@ npm start
   
   3. DASHBOARD 
     
-  ![image](https://github.com/user-attachments/assets/97d559e0-979b-4a80-b067-8e7ec22dbee1)
+  ![image](https://github.com/user-attachments/assets/586ba839-108a-4f99-b930-ed59dcdd8df7)
+
 
         
 
