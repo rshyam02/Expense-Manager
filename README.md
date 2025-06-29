@@ -14,7 +14,8 @@ A modern full-stack Expense Tracker app built using Spring Boot 🧩 (Java) for 
   🧠 Smart categorization of transactions
 
 🛠️ Tech Stack
-  🎨 Frontend
+   🎨 Frontend
+      
     ⚛️ ReactJS
 
     📦 Axios for API integration
@@ -24,6 +25,7 @@ A modern full-stack Expense Tracker app built using Spring Boot 🧩 (Java) for 
     📊 Chart.js or Recharts
   
   🔧 Backend
+    
     ☕ Spring Boot
   
     🔄 Spring Data JPA
@@ -35,42 +37,45 @@ A modern full-stack Expense Tracker app built using Spring Boot 🧩 (Java) for 
     ⚙️ Maven or Gradle
 
 📦 Getting Started
-🔽 Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/your-username/expense-tracker.git
-cd expense-tracker
-🧩 Backend Setup — Spring Boot
-bash
-Copy
-Edit
-cd backend
+
+  🔽 Clone the Repository
+    bash
+    Copy
+    Edit
+    git clone https://github.com/rshyam02/Expense-Tracker.git
+    cd Expense-Tracker
+ 🧩 Backend Setup — Spring Boot
+ 
+      bash
+      Copy
+      Edit
+      cd backend
 🔧 Configure your DB in application.properties:
 
-properties
-Copy
-Edit
-spring.datasource.url=jdbc:mysql://localhost:3306/expense_db
-spring.datasource.username=root
-spring.datasource.password=yourpassword
+    properties
+    Copy
+    Edit
+    spring.datasource.url=jdbc: jdbc:postgresql://ep-yellow-wind-a58wivcv-pooler.us-east-2.aws.neon.tech:5432/neondb
+    spring.datasource.username= neondb_owner
+    spring.datasource.password= npg_DX9PzWe0OHCN
 ▶️ Run the application:
 
-bash
-Copy
-Edit
-./mvnw spring-boot:run
+    bash
+    Copy
+    Edit
+    ./mvnw spring-boot:run
 ⚛️ Frontend Setup — React
-bash
-Copy
-Edit
-cd frontend
-📦 Install dependencies:
 
-bash
-Copy
-Edit
-npm install
+      bash
+      Copy
+      Edit
+      cd frontend
+    📦 Install dependencies:
+
+    bash
+    Copy
+    Edit
+    npm install
 ▶️ Start the app:
 
 bash
