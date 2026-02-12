@@ -1,4 +1,4 @@
-💸 Expense Tracker — Track Your Spending, Own Your Finances!
+💸 Expense Manager — Track Your Spending, Own Your Finances!
 
 A modern full-stack Expense Tracker app built using Spring Boot 🧩 (Java) for the backend and ReactJS ⚛️ for the frontend.
 
